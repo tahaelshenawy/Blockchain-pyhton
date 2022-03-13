@@ -8,8 +8,8 @@ genesis_block ={
             }
 blockchain = [genesis_block]
 open_transactions = []
-owner = 'Max'
-participants = {'Max'}
+owner = 'Taha'
+participants = {'Taha'}
 
 def hash_block(block):
     
@@ -147,7 +147,7 @@ while waiting_for_input:
             blockchain[0] ={
                 'previous_hash':'',
                 'index':0,
-                'transactions':[{'sender':'Chris','recipient':'Max','amonut':'100.0'}]
+                'transactions':[{'sender':'Chris','recipient':'Taha','amonut':'100.0'}]
             }
 
     elif user_choice =="q":
@@ -159,7 +159,7 @@ while waiting_for_input:
         print_blockchain_elements()
         print('Invalid blockchain !')
         break
-    print(get_blance('Max'))
+    print(get_blance('Taha'))
 else:
     print('User is Left !')  
 
